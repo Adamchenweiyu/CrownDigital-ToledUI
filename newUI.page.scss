@@ -1,0 +1,992 @@
+.background {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.board__pos{
+    position:fixed;
+    top: 435px;
+    left: 365px;
+    width: 3093px;
+    height: 98px;    
+    opacity: 1;
+}
+
+.first__cup{
+    position: fixed;
+    top: 1385px;
+    left: 380px;
+    width: 515px;
+    height: 600px;
+    display: inline-block;
+    opacity: 1;
+}
+
+.first__name {
+    position: fixed;
+    top: 1876px;
+    left: 365px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.first__id{
+    position: fixed;
+    top: 1946px;
+    left: 365px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.first__drink__type{
+    position: fixed;
+    top: 2016px;
+    left: 365px;
+    width: 466px;
+    height: 52px;
+    text-align: center;
+    font: normal normal normal 36px/52px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.second__cup{
+    position: fixed;
+    top: 1385px;
+    left: 893px;
+    width: 515px;
+    height: 600px;
+    display: inline-block;
+    opacity: 1;
+}
+
+.second__name {
+    position: fixed;
+    top: 1876px;
+    left: 878px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.second__id{
+    position: fixed;
+    top: 1946px;
+    left: 878px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.second__drink__type{
+    position: fixed;
+    top: 2016px;
+    left: 878px;
+    width: 466px;
+    height: 52px;
+    text-align: center;
+    font: normal normal normal 36px/52px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.third__cup{
+    position: fixed;
+    top: 1385px;
+    left: 1406px;
+    width: 515px;
+    height: 600px;
+    display: inline-block;
+    opacity: 1;
+}
+
+.third__name {
+    position: fixed;
+    top: 1876px;
+    left: 1391px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.third__id{
+    position: fixed;
+    top: 1946px;
+    left: 1391px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.third__drink__type{
+    position: fixed;
+    top: 2016px;
+    left: 1391px;
+    width: 466px;
+    height: 52px;
+    text-align: center;
+    font: normal normal normal 36px/52px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.fourth__cup{
+    position: fixed;
+    top: 1385px;
+    left: 1920px;
+    width: 515px;
+    height: 600px;
+    display: inline-block;
+    opacity: 1;
+}
+
+.fourth__name {
+    position: fixed;
+    top: 1876px;
+    left: 1905px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.fourth__id{
+    position: fixed;
+    top: 1946px;
+    left: 1905px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.fourth__drink__type{
+    position: fixed;
+    top: 2016px;
+    left: 1905px;
+    width: 466px;
+    height: 52px;
+    text-align: center;
+    font: normal normal normal 36px/52px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.fifth__cup{
+    position: fixed;
+    top: 1385px;
+    left: 2433px;
+    width: 515px;
+    height: 600px;
+    display: inline-block;
+    opacity: 1;
+}
+
+.fifth__name {
+    position: fixed;
+    top: 1876px;
+    left: 2418px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.fifth__id{
+    position: fixed;
+    top: 1946px;
+    left: 2418px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.fifth__drink__type{
+    position: fixed;
+    top: 2016px;
+    left: 2418px;
+    width: 466px;
+    height: 52px;
+    text-align: center;
+    font: normal normal normal 36px/52px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.sixth__cup{
+    position: fixed;
+    top: 1385px;
+    left: 2946px;
+    width: 515px;
+    height: 600px;
+    display: inline-block;
+    opacity: 1;
+}
+
+.sixth__name {
+    position: fixed;
+    top: 1876px;
+    left: 2931px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.sixth__id{
+    position: fixed;
+    top: 1946px;
+    left: 2931px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.sixth__drink__type{
+    position: fixed;
+    top: 2016px;
+    left: 2931px;
+    width: 466px;
+    height: 52px;
+    text-align: center;
+    font: normal normal normal 36px/52px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.first__complete{
+    position: fixed;
+    top: 1609px;
+    left: 380px;
+    width: 214px;
+    height: 214px;
+    display: inline-block;
+    opacity: 1;
+}
+
+.first__thanks{
+    position: fixed;
+    top: 1840px;
+    left: 260px;
+    width: 479px;
+    height: 70px;
+    display: inline-block;
+    opacity: 1;
+    text-align: center;
+    font: normal normal bold 33px/48px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.second__complete{
+    position: fixed;
+    top: 1609px;
+    left: 893px;
+    width: 214px;
+    height: 214px;
+    display: inline-block;
+    opacity: 1;
+}
+
+.second__thanks{
+    position: fixed;
+    top: 1840px;
+    left: 773px;
+    width: 479px;
+    height: 70px;
+    display: inline-block;
+    opacity: 1;
+    text-align: center;
+    font: normal normal bold 33px/48px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.third__complete{
+    position: fixed;
+    top: 1609px;
+    left: 1406px;
+    width: 214px;
+    height: 214px;
+    display: inline-block;
+    opacity: 1;
+}
+
+.third__thanks{
+    position: fixed;
+    top: 1840px;
+    left: 1286px;
+    width: 479px;
+    height: 70px;
+    display: inline-block;
+    opacity: 1;
+    text-align: center;
+    font: normal normal bold 33px/48px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.fourth__complete{
+    position: fixed;
+    top: 1609px;
+    left: 1920px;
+    width: 214px;
+    height: 214px;
+    display: inline-block;
+    opacity: 1;
+}
+
+.fourth__thanks{
+    position: fixed;
+    top: 1840px;
+    left: 1800px;
+    width: 479px;
+    height: 70px;
+    display: inline-block;
+    opacity: 1;
+    text-align: center;
+    font: normal normal bold 33px/48px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.fifth__complete{
+    position: fixed;
+    top: 1609px;
+    left: 2433px;
+    width: 214px;
+    height: 214px;
+    display: inline-block;
+    opacity: 1;
+}
+
+.fifth__thanks{
+    position: fixed;
+    top: 1840px;
+    left: 2313px;
+    width: 479px;
+    height: 70px;
+    display: inline-block;
+    opacity: 1;
+    text-align: center;
+    font: normal normal bold 33px/48px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.sixth__complete{
+    position: fixed;
+    top: 1609px;
+    left: 2946px;
+    width: 214px;
+    height: 214px;
+    display: inline-block;
+    opacity: 1;
+}
+
+.sixth__thanks{
+    position: fixed;
+    top: 1840px;
+    left: 2826px;
+    width: 479px;
+    height: 70px;
+    display: inline-block;
+    opacity: 1;
+    text-align: center;
+    font: normal normal bold 33px/48px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.first__bean{
+    position:fixed;
+    top: 176px;
+    left: 380px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.second__bean{
+    position:fixed;
+    top: 176px;
+    left: 893px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.third__bean{
+    position:fixed;
+    top: 176px;
+    left: 1406px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.fourth__bean{
+    position:fixed;
+    top: 176px;
+    left: 1920px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.fifth__bean{
+    position:fixed;
+    top: 176px;
+    left: 2433px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.sixth__bean{
+    position:fixed;
+    top: 176px;
+    left: 2946px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+
+
+.first__bean__butt{
+    position:fixed;
+    top: 176px;
+    left: 380px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.second__bean__butt{
+    position:fixed;
+    top: 176px;
+    left: 893px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.third__bean__butt{
+    position:fixed;
+    top: 176px;
+    left: 1406px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.fourth__bean__butt{
+    position:fixed;
+    top: 176px;
+    left: 1920px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.fifth__bean__butt{
+    position:fixed;
+    top: 176px;
+    left: 2433px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.sixth__bean__butt{
+    position:fixed;
+    top: 176px;
+    left: 2946px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+
+
+.first__bean__jump{
+    position:fixed;
+    top: 176px;
+    left: 380px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.second__bean__jump{
+    position:fixed;
+    top: 176px;
+    left: 893px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.third__bean__jump{
+    position:fixed;
+    top: 176px;
+    left: 1406px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.fourth__bean__jump{
+    position:fixed;
+    top: 176px;
+    left: 1920px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.fifth__bean__jump{
+    position:fixed;
+    top: 176px;
+    left: 2433px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.sixth__bean__jump{
+    position:fixed;
+    top: 176px;
+    left: 2946px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+
+
+.first__bean__swim{
+    position:fixed;
+    top: 176px;
+    left: 380px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.second__bean__swim{
+    position:fixed;
+    top: 176px;
+    left: 893px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.third__bean__swim{
+    position:fixed;
+    top: 176px;
+    left: 1406px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.fourth__bean__swim{
+    position:fixed;
+    top: 176px;
+    left: 1920px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.fifth__bean__swim{
+    position:fixed;
+    top: 176px;
+    left: 2433px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.sixth__bean__swim{
+    position:fixed;
+    top: 176px;
+    left: 2946px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+
+
+.first__bean__filled{
+    position:fixed;
+    top: 176px;
+    left: 380px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.second__bean__filled{
+    position:fixed;
+    top: 176px;
+    left: 893px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.third__bean__filled{
+    position:fixed;
+    top: 176px;
+    left: 1406px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.fourth__bean__filled{
+    position:fixed;
+    top: 176px;
+    left: 1920px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.fifth__bean__filled{
+    position:fixed;
+    top: 176px;
+    left: 2433px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.sixth__bean__filled{
+    position:fixed;
+    top: 176px;
+    left: 2946px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+
+
+.first__bean__complete{
+    position:fixed;
+    top: 176px;
+    left: 380px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.second__bean__complete{
+    position:fixed;
+    top: 176px;
+    left: 893px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.third__bean__complete{
+    position:fixed;
+    top: 176px;
+    left: 1406px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.fourth__bean__complete{
+    position:fixed;
+    top: 176px;
+    left: 1920px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.fifth__bean__complete{
+    position:fixed;
+    top: 176px;
+    left: 2433px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+.sixth__bean__complete{
+    position:fixed;
+    top: 176px;
+    left: 2946px;
+    width: 515px;
+    height: 770px;
+    opacity: 1;
+}
+
+
+.board__first__name{
+    position: fixed;
+    top: 946px;
+    left: 405px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.board__first__id{
+    position:fixed;
+    top: 1016px;
+    left: 405px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.board__first__drink{
+    position:fixed;
+    top: 1093px;
+    left: 405px;
+    width: 466px;
+    height: 98px;
+    text-align: center;
+    font: normal normal normal 30px/44px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.board__second__name{
+    position: fixed;
+    top: 946px;
+    left: 1058px;
+    width: 186px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.board__second__id{
+    position:fixed;
+    top: 1016px;
+    left: 918px;
+    width: 466px;
+    height: 70px;    
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.board__second__drink{
+    position:fixed;
+    top: 1093px;
+    left: 918px;
+    width: 466px;
+    height: 87px;
+    text-align: center;
+    font: normal normal normal 30px/44px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.board__third__name{
+    position: fixed;
+    top: 946px;
+    left: 1432px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.board__third__id{
+    position:fixed;
+    top: 1016px;
+    left: 1432px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.board__third__drink{
+    position:fixed;
+    top: 1093px;
+    left: 1431px;
+    width: 466px;
+    height: 44px;
+    text-align: center;
+    font: normal normal normal 30px/44px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.board__fourth__name{
+    position: fixed;
+    top: 946px;
+    left: 1945px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.board__fourth__id{
+    position:fixed;
+    top: 1016px;
+    left: 1945px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.board__fourth__drink{
+    position:fixed;
+    top: 1093px;
+    left: 1944px;
+    width: 466px;
+    height: 44px;
+    text-align: center;
+    font: normal normal normal 30px/44px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.board__fifth__name{
+    position: fixed;
+    top: 946px;
+    left: 2458px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.board__fifth__id{
+    position:fixed;
+    top: 1016px;
+    left: 2458px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.board__fifth__drink{
+    position:fixed;
+    top: 1093px;
+    left: 2457px;
+    width: 466px;
+    height: 44px;
+    text-align: center;
+    font: normal normal normal 30px/44px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.board__sixth__name{
+    position: fixed;
+    top: 946px;
+    left: 2971px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.board__sixth__id{
+    position:fixed;
+    top: 1016px;
+    left: 2971px;
+    width: 466px;
+    height: 70px;
+    text-align: center;
+    font: normal normal bold 48px/70px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FCD8E7;
+    opacity: 1;
+}
+
+.board__sixth__drink{
+    position:fixed;
+    top: 1093px;
+    left: 2971px;
+    width: 466px;
+    height: 44px;
+    text-align: center;
+    font: normal normal normal 30px/44px Source Han Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}

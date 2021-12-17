@@ -1,0 +1,125 @@
+  <ion-content no-padding>
+    <div *ngIf="show_main">
+      <div class='container'>
+        <div class="row">
+          <div>
+            <video loop src="assets/japan/background.mp4" autoplay='true'></video>
+  
+            <span *ngIf="(slots[0] && (slots[0].status == 'UNTAKEN'))" class="first__cup">
+              <img src="assets/japan/cup_ready.gif">
+                <span class='first__thanks'>コーヒーをお楽しみください</span>
+            </span>
+  
+            <span *ngIf="(slots[1] && (slots[1].status == 'UNTAKEN'))" class="second__cup">
+              <img src="assets/japan/cup_ready.gif">
+                <span class='second__thanks'>コーヒーをお楽しみください</span>
+            </span>
+  
+            <span *ngIf="(slots[2] && (slots[2].status == 'UNTAKEN'))" class="third__cup">
+              <img src="assets/japan/cup_ready.gif">
+                <span class='third__thanks'>コーヒーをお楽しみください</span>
+            </span>
+  
+            <span *ngIf="(slots[3] && (slots[3].status == 'UNTAKEN'))" class="fourth__cup">
+              <img src="assets/japan/cup_ready.gif">
+                <span class='fourth__thanks'>コーヒーをお楽しみください</span>
+            </span>
+
+              <span *ngIf="(slots[0] && (slots[0].status == 'COLLECTING'))" class="first__arrow">
+                <img src="assets/japan/arrow.gif">
+                    <span class='first__id__name' >{{ (slots[0].cust_name ? toTitleCase(slots[0].cust_name) + ' - ' + slots[0].order_item_id: "&nbsp;")  | slice:0:14}}</span>
+                    <span class='first__collect'>飲み物を集めてください</span>
+              </span>
+  
+              <span *ngIf="(slots[1] && (slots[1].status == 'COLLECTING'))" class="second__arrow">
+                <img src="assets/japan/arrow.gif">
+                    <span class='second__id__name' >{{ (slots[1].cust_name ? toTitleCase(slots[1].cust_name) + ' - ' + slots[1].order_item_id : "&nbsp;")  | slice:0:14}}</span>
+                    <span class='second__collect'>飲み物を集めてください</span>
+              </span>
+
+              <span *ngIf="(slots[2] && (slots[2].status == 'COLLECTING'))" class="third__arrow">
+                <img src="assets/japan/arrow.gif">
+                    <span class='third__id__name' >{{ (slots[2].cust_name ? toTitleCase(slots[2].cust_name) + ' - ' + slots[2].order_item_id : "&nbsp;")  | slice:0:14}}</span>
+                    <span class='third__collect'>飲み物を集めてください</span>
+              </span>
+
+              <span *ngIf="( slots[3] && (slots[3].status == 'COLLECTING'))" class="fourth__arrow">
+                <img src="assets/japan/arrow.gif">
+                    <span class='fourth__id__name' >{{ (slots[3].cust_name ? toTitleCase(slots[3].cust_name) + ' - ' + slots[3].order_item_id: "&nbsp;")  | slice:0:14}}</span>
+                    <span class='fourth__collect'>飲み物を集めてください</span>
+              </span>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div  *ngFor="let slot_no of [1,2,3,4,5,6]" no-padding [ngStyle]="{'display': 'none', 'margin-top' : '20vh', 'position' : 'fixed', 'bottom': '5vh', 'left': (sl_displace[slot_no - 1]) + 'vw' }" >
+              
+      <div *ngIf="(slots[slot_no-1]) && (((slots[slot_no-1].status) == 'UNTAKEN') || (slot_count[slot_no-1] < 6))  && (slots[slot_no-1].order_item_id)"  [class]="cartridge + ' sl-cart-coffee-item top_q animated ' + slots[slot_no-1].status + ' ' + (slots[slot_no-1].is_new ? 'bounceInUp ' : ' ' ) + ((slots[slot_no-1].order_item_id==last_order_item_read) ? 'highlight-order ' : ' '  + ((slots[slot_no-1].cup_type == 'tumbler')? 'tumbler' : 'paper' ) )" >
+        <ion-row [class]="cartridge + ' sl-cart-coffee-item-line'">
+          <span [class]="'cust-name '+ ((slots[slot_no-1].cust_name.length < 8) ? 'larger-text' : '')" >{{ (slots[slot_no-1].cust_name ? toTitleCase(slots[slot_no-1].cust_name) : "&nbsp;")  | slice:0:14}}</span>
+        </ion-row>
+        <ion-row *ngIf="cartridge!='xyz'" [class]="cartridge + ' sl-cart-coffee-item-line'">
+          <span class="oiid">{{ (slots[slot_no-1].call_id) }}</span>
+        </ion-row>
+        <ion-row [class]="cartridge + ' sl-cart-coffee-item-line'">
+          <sup *ngIf="dev_mode">{{slots[slot_no-1].subitem}}</sup>
+          <span class="prod-name">{{ slots[slot_no-1].product_name }}</span>
+        </ion-row>
+        <ion-row *ngIf="cartridge=='xyz'" [class]="cartridge + ' sl-cart-coffee-item-line'">
+          <span class="modif">{{slots[slot_no-1].iced_text}} {{ slots[slot_no-1].modif_text }}&nbsp;</span>
+        </ion-row>
+        <ion-row *ngIf="cartridge=='xyz'" [class]="cartridge + ' sl-cart-coffee-item-line'">
+          <span class="oiid">{{ (slots[slot_no-1].call_id) }}</span>
+        </ion-row>
+        <ion-row *ngIf="cartridge=='xyz'" [class]="cartridge + ' sl-cart-coffee-item-line'">
+          <span class="status animated pulse infinite fast" *ngIf="(slots[slot_no-1].status) =='COLLECTING'">Please Scan QR</span>
+        </ion-row>
+      </div>
+      <div *ngIf="(slots[slot_no-1]) && ((slots[slot_no-1].status) == 'COLLECTING') && (slot_count[slot_no-1] > 5) && (slots[slot_no-1].order_item_id)"  [class]="cartridge + ' top_q animated ' + slots[slot_no-1].status + ' ' + (slots[slot_no-1].is_new ? 'bounceInUp ' : ' ' ) + ((slots[slot_no-1].order_item_id==last_order_item_read) ? 'highlight-order ' : ' '  )" >
+        <img src="/assets/xyz/ad9.gif" style="position:relative; left: -3vw; width: 14vw; height: 15vh; border-radius: 0.5vw;" autoplay="autoplay"  />
+        <div style="position:relative; left: -3vw; width: 14vw; ">
+          <span style="width:100%;
+          text-align: center;
+          color: white;
+          font-size: 18px;
+          position: relative;">{{ (slots[slot_no-1].call_id) }}</span>
+        </div>
+        <div style="position:relative; left: -3vw; width: 14vw; ">
+          <span style="width:100%;
+          text-align: center;
+          color: white;
+          font-size: 12px;
+          position: relative;">{{ (slots[slot_no-1].cust_name ? toTitleCase(slots[slot_no-1].cust_name) : "&nbsp;")  | slice:0:30}}</span>
+        </div>
+      </div> 
+    </div>
+  
+    
+    <div *ngIf="!show_main"> <!--if all order status is 'X' then show this too, or condition -->
+      <video loop src="assets/japan/default_video.mp4" autoplay='true'></video>
+    </div>
+  
+  </ion-content>
+        
+      
+    <!-- </div>
+      <div  style="display: inline-block; background:red; width:25vw; height:80vh; top:10vh">
+      
+      </div>  
+      <div  style="display: inline-block; background:blue; width:25vw;  height:80vh; top:10vh">
+        
+      </div>
+      <div  style="display: inline-block;  background:green; width:25vw;  height:80vh; top:10vh">
+        
+      </div>
+      <div *ngIf="adam" style="display: inline-block; background:yellow; width:25vw;  height:80vh; top:10vh">
+        <video src="assets/paying.mp4" autoplay="true"></video>
+      
+  
+      
+    </div>
+  </ion-content> -->
+

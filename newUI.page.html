@@ -1,0 +1,276 @@
+<ion-content no padding>
+  <ion-header class="background">
+    <div class="container">
+      <div class="row">
+        <span class="board__pos">
+          <img src="assets/japan/board.png">
+        </span>
+
+<!--Customer order comes in [end with a hold/pause gif] "C" mp4-->
+    <span *ngIf='order__in' class='first__bean'>
+      <video src ="assets/japan/Coffee Bean_Pop In_1.mov" autoplay='true'></video>
+    </span>
+
+    <span *ngIf='order__in' class='second__bean'>
+      <video src ="assets/japan/Coffee Bean_Pop In_1.mov" autoplay='true'></video>
+    </span>
+
+    <span *ngIf='order__in' class='third__bean'>
+      <video src ="assets/japan/Coffee Bean_Pop In_1.mov" autoplay></video>
+    </span>
+
+    <span *ngIf='order__in' class='fourth__bean'>
+      <video src ="assets/japan/Coffee Bean_Pop In_1.mov" autoplay></video>
+    </span>
+
+    <span *ngIf='order__in' class='fifth__bean'>
+      <video src ="assets/japan/Coffee Bean_Pop In_1.mov" autoplay></video>
+    </span>
+
+    <span *ngIf='order__in' class='sixth__bean'>
+      <video src ="assets/japan/Coffee Bean_Pop In_1.mov" autoplay></video>
+    </span>
+<!--Customer order comes in [end with a hold/pause gif] "C"-->
+
+
+<!-- Cusomter name,id and drinks type-->
+    <span class='board__first__name'>{{ (slots[0].cust_name ? toTitleCase(slots[0].cust_name): "&nbsp;")  | slice:0:14}}</span>
+      <span class='board__first__id'>{{slots[0].order_item_id}}</span>
+        <span class='board__first__drink'>ダブルエスプレッソ (Double Espresso)</span>
+
+    <span class='board__second__name'>{{ (slots[1].cust_name ? toTitleCase(slots[1].cust_name): "&nbsp;")  | slice:0:14}}</span>
+      <span class='board__second__id'>{{slots[1].order_item_id}}</span>
+        <span class='board__second__drink'>カプチーノ (Cappuccino)</span>
+
+        <span class='board__third__name'>{{ (slots[2].cust_name ? toTitleCase(slots[2].cust_name): "&nbsp;")  | slice:0:14}}</span>
+        <span class='board__third__id'>{{slots[2].order_item_id}}</span>
+          <span class='board__third__drink'>フラットホワイト(Flat White)</span>
+
+    <span class='board__fourth__name'>{{ (slots[3].cust_name ? toTitleCase(slots[3].cust_name): "&nbsp;")  | slice:0:14}}</span>
+      <span class='board__fourth__id'>{{slots[3].order_item_id}}</span>
+        <span class='board__fourth__drink'>カプチーノ (Cappuccino)</span>
+
+    <span class='board__fifth__name'>{{ (slots[4].cust_name ? toTitleCase(slots[4].cust_name): "&nbsp;")  | slice:0:14}}</span>
+      <span class='board__fifth__id'>{{slots[4].order_item_id}}</span>
+        <span class='board__fifth__drink'>ティーラテ (Tea Latte)</span>
+
+    <span class='board__sixth__name'>{{ (slots[5].cust_name ? toTitleCase(slots[5].cust_name): "&nbsp;")  | slice:0:14}}</span>
+      <span class='board__sxith__id'>{{slots[5].order_item_id}}</span>
+        <span class='board__sixth__drink'>ラテ (Latte)</span>
+<!-- Cusomter name,id and drinks type-->
+
+
+<!--Loading eversys/look around "L"-->
+    <span *ngIf='butt__animation' class="first__bean__butt">
+      <img src="assets/japan/Coffee-Bean_Waiting_Butt-Scratch_2.gif">
+    </span>
+
+    <span *ngIf='butt__animation' class='second__bean__butt'>
+      <img src ="assets/japan/Coffee-Bean_Waiting_Butt-Scratch_2.gif" >
+    </span>
+
+    <span *ngIf='butt__animation' class='third__bean__butt'>
+      <img src ="assets/japan/Coffee-Bean_Waiting_Butt-Scratch_2.gif" >
+    </span>
+
+    <span *ngIf='butt__animation' class='fourth__bean__butt'>
+      <img src ="assets/japan/Coffee-Bean_Waiting_Butt-Scratch_2.gif" >
+    </span>
+
+    <span *ngIf='butt__animation' class='fifth__bean__butt'>
+      <img src ="assets/japan/Coffee-Bean_Waiting_Butt-Scratch_2.gif" >
+    </span>
+
+    <span *ngIf='butt__animation' class='sixth__bean__butt'>
+      <img src ="assets/japan/Coffee-Bean_Waiting_Butt-Scratch_2.gif" >
+    </span>
+<!--Loading eversys/look around "L"-->
+
+
+<!--Everysys dispensing "E" [jump in part 1]-->
+    <span *ngIf='jump__into__water' class="first__bean__jump">
+      <img src="assets/japan/Coffee-Bean_Jump-Water_3.gif">
+    </span>
+
+    <span *ngIf='jump__into__water' class='second__bean__jump'>
+      <img src ="assets/japan/Coffee-Bean_Jump-Water_3.gif" >
+    </span>
+
+    <span *ngIf='jump__into__water' class='third__bean__jump'>
+      <img src ="assets/japan/Coffee-Bean_Jump-Water_3.gif" >
+    </span>
+
+    <span *ngIf='jump__into__water' class='fourth__bean__jump'>
+      <img src ="assets/japan/Coffee-Bean_Jump-Water_3.gif" >
+    </span>
+
+    <span *ngIf='jump__into__water' class='fifth__bean__jump'>
+      <img src ="assets/japan/Coffee-Bean_Jump-Water_3.gif" >
+    </span>
+
+    <span *ngIf='jump__into__water' class='sixth__bean__jump'>
+      <img src ="assets/japan/Coffee-Bean_Jump-Water_3.gif" >
+    </span>
+<!--Everysys dispensing "E" [jump in part 1]-->
+
+
+<!--Eversys "dispensing"/ "E" [swimming part 2]-->
+    <span *ngIf='soaking__in__water' class="first__bean__swim">
+      <img src="assets/japan/Coffee-Bean_Swimming_Processing_4.gif">
+    </span>
+
+    <span *ngIf='soaking__in__water' class='second__bean__swim'>
+      <img src ="assets/japan/Coffee-Bean_Swimming_Processing_4.gif" >
+    </span>
+
+    <span *ngIf='soaking__in__water' class='third__bean__swim'>
+      <img src ="assets/japan/Coffee-Bean_Swimming_Processing_4.gif" >
+    </span>
+
+    <span *ngIf='soaking__in__water' class='fourth__bean__swim'>
+      <img src ="assets/japan/Coffee-Bean_Swimming_Processing_4.gif" >
+    </span>
+
+    <span *ngIf='soaking__in__water' class='fifth__bean__swim'>
+      <img src ="assets/japan/Coffee-Bean_Swimming_Processing_4.gif" >
+    </span>
+
+    <span *ngIf='soaking__in__water' class='sixth__bean__swim'>
+      <img src ="assets/japan/Coffee-Bean_Swimming_Processing_4.gif" >
+    </span>
+<!--Eversys "dispensing"/ "E" [swimming part 2]-->
+
+
+<!--"filled" changing colour "F"-->
+    <span *ngIf='drink__filled' class='first__bean__filled'>
+      <img src ="assets/japan/Coffee_Changing-Colour_Ready_5.gif" >
+    </span>
+
+    <span *ngIf='drink__filled' class='second__bean__filled'>
+      <img src ="assets/japan/Coffee_Changing-Colour_Ready_5.gif" >
+    </span>
+
+    <span *ngIf='drink__filled' class='third__bean__filled'>
+      <img src ="assets/japan/Coffee_Changing-Colour_Ready_5.gif" >
+    </span>
+
+    <span *ngIf='drink__filled' class='fourth__bean__filled'>
+      <img src ="assets/japan/Coffee_Changing-Colour_Ready_5.gif" >
+    </span>
+
+    <span *ngIf='drink__filled' class='fifth__bean__filled'>
+      <img src ="assets/japan/Coffee_Changing-Colour_Ready_5.gif" >
+    </span>
+
+    <span *ngIf='drink__filled' class='sixth__bean__filled'>
+      <img src ="assets/japan/Coffee_Changing-Colour_Ready_5.gif" >
+    </span>
+<!--"filled" changing colour "F"-->
+
+
+<!--"Serving"/"S" Pigeon hole animation [mp4]-->
+    <span *ngIf='PH__complete' class='first__bean__complete'>
+      <img src ="assets/japan/Pigeon-Hole_Animation_6.gif" >
+    </span>
+
+    <span *ngIf='PH__complete' class='second__bean__complete'>
+      <img src ="assets/japan/Pigeon-Hole_Animation_6.gif" >
+    </span>
+
+    <span *ngIf='PH__complete' class='third__bean__complete'>
+      <img src ="assets/japan/Pigeon-Hole_Animation_6.gif" >
+    </span>
+
+    <span *ngIf='PH__complete' class='fourth__bean__complete'>
+      <img src ="assets/japan/Pigeon-Hole_Animation_6.gif" >
+    </span>
+
+    <span *ngIf='PH__complete' class='fifth__bean__complete'>
+      <img src ="assets/japan/Pigeon-Hole_Animation_6.gif" >
+    </span>
+
+    <span *ngIf='PH__complete' class='sixth__bean__complete'>
+      <img src ="assets/japan/Pigeon-Hole_Animation_6.gif" >
+    </span>
+<!--"Serving"/"S" Pigeon hole animation [mp4]-->
+
+
+<!-- PIGHEON HOLE ORDERS-->
+    <span *ngIf="(slots[0] && (slots[0].status == 'COLLECTING'))" class="first__cup">
+      <img src="assets/japan/cup_ready.gif">
+        <span class="first__name">{{ (slots[0].cust_name ? toTitleCase(slots[0].cust_name): "&nbsp;")  | slice:0:14}}</span>
+        <span class="first__id">{{slots[0].order_item_id}}</span>
+        <span class="first__drink__type">ラテ (Latte)</span>
+    </span>
+    
+    <span *ngIf="(slots[1] && (slots[1].status == 'COLLECTING'))" class="second__cup">
+      <img src="assets/japan/cup_ready.gif">
+        <span class="second__name">{{ (slots[1].cust_name ? toTitleCase(slots[1].cust_name): "&nbsp;")  | slice:0:14}}</span>
+        <span class="second__id">{{slots[1].order_item_id}}</span>
+        <span class="second__drink__type">ダブルエスプレッソ (Double Espresso)</span>
+    </span>
+    
+    <span *ngIf="(slots[2] && (slots[2].status == 'COLLECTING'))" class="third__cup">
+      <img src="assets/japan/cup_ready.gif">
+        <span class="third__name">{{ (slots[2].cust_name ? toTitleCase(slots[2].cust_name): "&nbsp;")  | slice:0:14}}</span>
+        <span class="third__id">{{slots[2].order_item_id}}</span>
+        <span class="third__drink__type">フラットホワイト(Flat White)</span>
+    </span>
+    
+    <span *ngIf="(slots[3] && (slots[3].status == 'COLLECTING'))" class="fourth__cup">
+      <img src="assets/japan/cup_ready.gif">
+        <span class="fourth__name">{{ (slots[3].cust_name ? toTitleCase(slots[3].cust_name): "&nbsp;")  | slice:0:14}}</span>
+        <span class="fourth__id">{{slots[3].order_item_id}}</span>
+        <span class="fourth__drink__type">ラテ (Latte)</span>
+    </span>
+    
+    <span *ngIf="(slots[4] && (slots[4].status == 'COLLECTING'))" class="fifth__cup">
+      <img src="assets/japan/cup_ready.gif">
+        <span class="fifth__name">{{ (slots[4].cust_name ? toTitleCase(slots[4].cust_name): "&nbsp;")  | slice:0:14}}</span>
+        <span class="fifth__id">{{slots[4].order_item_id}}</span>
+        <span class="fifth__drink__type">ラテ (Latte)</span>
+    </span>
+    
+    <span *ngIf="(slots[5] && (slots[5].status == 'COLLECTING'))" class="sixth__cup">
+      <img src="assets/japan/cup_ready.gif">
+        <span class="sixth__name">{{ (slots[5].cust_name ? toTitleCase(slots[5].cust_name): "&nbsp;")  | slice:0:14}}</span>
+        <span class="sixth__id">{{slots[5].order_item_id}}</span>
+        <span class="sixth__drink__type">ラテ (Latte)</span>
+    </span>
+    
+    <span *ngIf="(slots[0] && (slots[0].status == 'UNTAKEN'))" class="first__complete">
+      <img src="assets/japan/tick_done.gif">
+        <span class='first__thanks'>コーヒーをお楽しみください</span>
+    </span>
+
+    <span *ngIf="(slots[1] && (slots[1].status == 'UNTAKEN'))" class="second__complete">
+      <img src="assets/japan/tick_done.gif">
+        <span class='second__thanks'>コーヒーをお楽しみください</span>
+    </span>
+
+    <span *ngIf="(slots[2] && (slots[2].status == 'UNTAKEN'))" class="third__complete">
+      <img src="assets/japan/tick_done.gif">
+        <span class='third__thanks'>コーヒーをお楽しみください</span>
+    </span>
+
+    <span *ngIf="(slots[3] && (slots[3].status == 'UNTAKEN'))" class="fourth__complete">
+      <img src="assets/japan/tick_done.gif">
+        <span class='fourth__thanks'>コーヒーをお楽しみください</span>
+    </span>
+
+    <span *ngIf="(slots[4] && (slots[4].status == 'UNTAKEN'))" class="fifth__complete">
+      <img src="assets/japan/tick_done.gif">
+        <span class='fifth__thanks'>コーヒーをお楽しみください</span>
+    </span>
+
+    <span *ngIf="(slots[5] && (slots[5].status == 'UNTAKEN'))" class="sixth__complete">
+      <img src="assets/japan/tick_done.gif">
+        <span class='sixth__thanks'>コーヒーをお楽しみください</span>
+    </span>
+  </div>
+</div>
+<!-- PIGHEON HOLE ORDERS-->
+
+
+  </ion-header>
+</ion-content>
